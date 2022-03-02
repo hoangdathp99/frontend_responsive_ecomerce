@@ -13,26 +13,33 @@
                         display: block;
                     }
                     .navbar {
+                        padding: none;
+                        display: block;
                         .transit(all, .5s);
-                        text-align: center;
+                        // text-align: center;
+                        .transformer(translateX(-500%));
                         position: fixed;
                         top: 45px;
                         left: 0;
                         background-color: #fff;
-                        height: 100vh;
-                        width: 30vw;
+                        height: 75vh;
+                        width: 30%;
                         z-index: 999;
+                        border-right: 2px solid @bg-header;
+                        border-bottom: 2px solid @bg-header;
                         .nav-title {
                             display: block;
+                            // width: 100%;
                         }
-                        .transformer(translateX(-105%));
+                        
                         .nav-item {
                             // display: none;
                             display: block;
+                            // width: 100%;
                             &:last-child { 
                                 
                             }
-                            padding: 5px 15px;
+                            padding: 5px 0;
                         }
                         
                     }
@@ -74,6 +81,22 @@
             }
         }
     }
+    .menu-bar {
+        &-inner {
+            .nav-bar{
+                nav {
+                    .nav-icon {
+                        display: block;
+                    }
+                    .navbar {
+                        width: 50%;
+                    }
+                }
+            }
+               
+        }
+    }
+    
 }
 @media all and (max-width: 375px) {
     

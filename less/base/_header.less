@@ -1,19 +1,17 @@
 .cover {
     position: fixed;;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    // background-color: cyan;
+    background-color: #fff;
     opacity: 0;
     z-index: -1;
 }
 .cover.active {
-    opacity: 0.9;
+    opacity: 1;
     z-index: 100;
     .transit(all, .5s);
 }
 .logo-mobile {
-    // padding: 0 30px;
-    // text-align: left;
     display: none;
 }
 .header {
@@ -44,9 +42,11 @@
                 margin-right: 0px;
                 margin-left: -4px;
             }
-            
         }
         .web-info.active-nav {
+            display: none;
+        }
+        .control-box.active-nav {
             display: none;
         }
         .control-box {
@@ -77,16 +77,31 @@
     }
 }
 .menu-bar {
-    padding: 20px 15px;
+    align-items: center;
+    padding: 20px 15px 19px 15px;
     box-sizing: border-box;
     font-family: "Montserrat";
     font-weight: 700;
-    // height: 78px;
+    // height: 79px;
     border-bottom: 1px solid @boder-menu;
     &-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        .shop-name {
+            height: 36px;
+            width: 184px;
+            line-height: 36px;
+            text-align: center;
+            position: relative;
+            padding-left: 12px;
+            vertical-align: bottom;
+            border: 2px solid @shop-name-color;
+            text-transform: uppercase;
+            color: @shop-name-color;
+            font-size: 20px;
+            letter-spacing: 0.764em;
+        }
         .nav-bar {
             .flex();
             box-sizing: border-box;
@@ -103,7 +118,7 @@
                 }
                 .navbar {
                     align-items: center;
-                    // display: flex;
+                    display: flex;
                     .nav-title {
                         display: none;
                         text-transform: uppercase;
@@ -112,6 +127,7 @@
                         color: #fff;
                         line-height: 40px;
                         height: 43px;
+                        // width: 100%;
                         padding: 0 15px;
                     }
                     .nav-item {
@@ -123,12 +139,12 @@
                             font-size: 14px;
                         }
                         &:last-child { 
-                            margin-right: none;
+                            margin-right: 57px;
                         }
-                    }
-                    .nav-item.active {
-                        &>a{
-                            color: #8262b5;
+                        &.-active {
+                            &>a{
+                                color: #8262b5;
+                            }
                         }
                     }
                 }
@@ -147,12 +163,12 @@
                             font-size: 14px;
                             padding: 0;
                             vertical-align: middle;
-                            display: inline;             
+                            display: inline;
                             cursor: pointer;
-                           
+
                         }
                     }
-                
+
                 }
             }
             
@@ -160,6 +176,7 @@
         .form-control-item {
             display: flex;
             align-items: center;
+            
             .cart {
                 i {
                     vertical-align: middle; 

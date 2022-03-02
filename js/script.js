@@ -4,12 +4,14 @@ $(document).ready(function () {
         $('.navbar').addClass('active');
         $('.cover').addClass('active');
         $('.web-info').addClass('active-nav');
+        $('.control-box').addClass('active-nav');
     });
     $('.cover').click(function (e) { 
         e.preventDefault();
         $('.navbar').removeClass('active');
         $('.cover').removeClass('active');
         $('.web-info').removeClass('active-nav');
+        $('.control-box').removeClass('active-nav');
     });
     // $('nav-bar').click(function (e) { 
     //     e.preventDefault();
