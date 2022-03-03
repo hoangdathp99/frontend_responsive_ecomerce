@@ -16,6 +16,12 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   margin: 0;
   padding: 0;
@@ -37,6 +43,12 @@ ul li {
 .container-fluid {
   width: 100%;
   padding: 0 15px;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
   box-sizing: border-box;
 }
 .row {
@@ -194,7 +206,7 @@ ul li {
 .menu-bar-inner .nav-bar nav .navbar .nav-item:last-child {
   margin-right: 57px;
 }
-.menu-bar-inner .nav-bar nav .navbar .nav-item.-active > a {
+.menu-bar-inner .nav-bar nav .navbar .nav-item.active > a {
   color: #8262b5;
 }
 .menu-bar-inner .nav-bar .search {
@@ -235,6 +247,111 @@ ul li {
 }
 .menu-bar-inner .form-control-item .cart .control-item-cart {
   font-size: 29px;
+}
+.banner {
+  padding: 0 30px;
+}
+.banner .banner-col {
+  margin-top: -15px;
+  overflow: hidden;
+  height: 575px;
+}
+.banner .banner-left-button button {
+  background-color: #8262b5;
+  width: 106px;
+  height: 40px;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+}
+.banner .banner-left-button a {
+  align-items: center;
+  color: #fff;
+}
+.banner-left {
+  padding: 0 15px;
+  margin: 30px 0;
+  width: 66.67%;
+  box-sizing: border-box;
+  position: relative;
+}
+.banner-left .banner-inner {
+  cursor: pointer;
+  overflow: hidden;
+  height: 100%;
+}
+.banner-left img {
+  display: block;
+  width: 100%;
+}
+.banner-left-content img {
+  position: absolute;
+  bottom: 40px;
+  right: 90px;
+  display: block;
+  height: 43px;
+  width: 324px;
+}
+.banner-left-detail {
+  position: absolute;
+  text-align: end;
+  right: 15px;
+  padding-right: 94px;
+  bottom: 158px;
+  width: 100%;
+}
+.banner-right {
+  padding: 0 15px;
+  margin: 30px 0;
+  width: 33.33%;
+  box-sizing: border-box;
+}
+.banner-right-item {
+  position: relative;
+  padding: 13px 0;
+  overflow: hidden;
+}
+.banner-right-item-inner {
+  cursor: pointer;
+}
+.banner-right-content {
+  position: absolute;
+  bottom: 280px;
+  left: 38px;
+}
+.banner-right-content .title {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+}
+.banner-right-content .content {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 18px;
+}
+.banner-right-content .banner-right-button {
+  padding: 0px 0px 2px 2px;
+}
+.banner-right-content .banner-right-button button {
+  background-color: #8262b5;
+  width: 108px;
+  height: 40px;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+}
+.banner-right-content .banner-right-button a {
+  align-items: center;
+  color: #fff;
+}
+.banner-right-content .banner-right-button .button-content {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
 }
 @media all and (max-width: 1380px) {
   .logo-mobile {
@@ -284,12 +401,54 @@ ul li {
     width: 150px;
   }
 }
+@media all and (max-width: 1200px) {
+  .banner-left {
+    transition: all, 1.5s;
+    -webkit-transition: all, 1.5s;
+    -moz-transition: all, 1.5s;
+    -o-transition: all, 1.5s;
+    width: 100%;
+  }
+  .banner-right {
+    padding: 0 15px;
+    margin: 0;
+    transition: all, 1.5s;
+    -webkit-transition: all, 1.5s;
+    -moz-transition: all, 1.5s;
+    -o-transition: all, 1.5s;
+    width: 100%;
+  }
+  .banner .banner-col {
+    align-items: center;
+  }
+}
 @media all and (max-width: 900px) {
   .header-inner .control-box .control-box-icon {
     margin-left: 10px;
   }
   .header-inner .control-box .control-box-icon .content {
     display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  .banner .banner-left-button button {
+    width: 81.1px;
+    height: 30px;
+    font-size: 11px;
+  }
+  .banner-left-content img {
+    transition: all, 1.5s;
+    -webkit-transition: all, 1.5s;
+    -moz-transition: all, 1.5s;
+    -o-transition: all, 1.5s;
+    height: 34px;
+    width: 256px;
+    bottom: 30px;
+    right: 26px;
+  }
+  .banner-left-detail {
+    padding-right: 30px;
+    bottom: 108px;
   }
 }
 @media all and (max-width: 483px) {
@@ -301,6 +460,25 @@ ul li {
   }
   .menu-bar-inner .nav-bar nav .navbar {
     width: 50%;
+  }
+  .banner .banner-left-button button {
+    width: 70px;
+    height: 20px;
+    font-size: 11px;
+  }
+  .banner-left-content img {
+    transition: all, 1.5s;
+    -webkit-transition: all, 1.5s;
+    -moz-transition: all, 1.5s;
+    -o-transition: all, 1.5s;
+    height: 24px;
+    width: 181px;
+    bottom: 30px;
+    right: 26px;
+  }
+  .banner-left-detail {
+    padding-right: 30px;
+    bottom: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

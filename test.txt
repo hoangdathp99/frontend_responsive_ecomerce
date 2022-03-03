@@ -1,17 +1,19 @@
 .cover {
     position: fixed;;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-color: #fff;
+    // background-color: cyan;
     opacity: 0;
     z-index: -1;
 }
 .cover.active {
-    opacity: 1;
+    opacity: 0.9;
     z-index: 100;
     .transit(all, .5s);
 }
 .logo-mobile {
+    // padding: 0 30px;
+    // text-align: left;
     display: none;
 }
 .header {
@@ -22,7 +24,7 @@
     background-color: @bg-header;
     color: @header-color;
     display: flex;
-    height: 45px;
+    height: 46px;
     letter-spacing: 0.01em;
     align-items: center;
     &-inner {
@@ -42,11 +44,9 @@
                 margin-right: 0px;
                 margin-left: -4px;
             }
+            
         }
         .web-info.active-nav {
-            display: none;
-        }
-        .control-box.active-nav {
             display: none;
         }
         .control-box {
@@ -74,34 +74,22 @@
                 }
             }
         }
+        .control-box.active-nav {
+            display: none;
+        }
     }
 }
 .menu-bar {
-    align-items: center;
-    padding: 20px 15px 19px 15px;
+    padding: 20px 15px;
     box-sizing: border-box;
     font-family: "Montserrat";
     font-weight: 700;
-    // height: 79px;
+    height: 78px;
     border-bottom: 1px solid @boder-menu;
     &-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .shop-name {
-            height: 36px;
-            width: 184px;
-            line-height: 36px;
-            text-align: center;
-            position: relative;
-            padding-left: 12px;
-            vertical-align: bottom;
-            border: 2px solid @shop-name-color;
-            text-transform: uppercase;
-            color: @shop-name-color;
-            font-size: 20px;
-            letter-spacing: 0.764em;
-        }
         .nav-bar {
             .flex();
             box-sizing: border-box;
@@ -118,7 +106,7 @@
                 }
                 .navbar {
                     align-items: center;
-                    display: flex;
+                    // display: flex;
                     .nav-title {
                         display: none;
                         text-transform: uppercase;
@@ -127,7 +115,6 @@
                         color: #fff;
                         line-height: 40px;
                         height: 43px;
-                        // width: 100%;
                         padding: 0 15px;
                     }
                     .nav-item {
@@ -139,7 +126,7 @@
                             font-size: 14px;
                         }
                         &:last-child { 
-                            margin-right: 57px;
+                            margin-right: 45px;
                         }
                     }
                     .nav-item.active {
@@ -163,12 +150,12 @@
                             font-size: 14px;
                             padding: 0;
                             vertical-align: middle;
-                            display: inline;
+                            display: inline;             
                             cursor: pointer;
-
+                           
                         }
                     }
-
+                
                 }
             }
             
@@ -176,7 +163,6 @@
         .form-control-item {
             display: flex;
             align-items: center;
-            
             .cart {
                 i {
                     vertical-align: middle; 

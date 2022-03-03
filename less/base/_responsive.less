@@ -55,6 +55,27 @@
             
         }
     }
+    
+}
+@media all and (max-width: 1200px){
+    .banner {
+        &-left {
+            .transit(all, 1.5s);
+            width: 100%;
+        }
+        &-right {
+            .transit(all, 1.5s);
+            padding: 0 15px;
+            margin: 0;
+            width: 100%;
+            &-item {
+            }
+        }
+        .banner-col {
+            align-items: center;
+            
+        }
+    }
 }
 @media all and (max-width: 900px) {
     .header {
@@ -70,8 +91,34 @@
         }
     }
 }
-@media all and (max-width: 760px) {
-    
+@media all and (max-width: 768px) {
+    .banner {
+        .banner-left-button{
+            button{
+                
+                 width: 81.1px;
+                 height: 30px;
+                 font-size: 11px;
+            }
+         }
+        &-left {
+            &-content {
+                img {
+                    .transit(all, 1.5s);
+                    height: 34px;
+                    width: 256px;
+                    bottom: 30px;
+                    right: 26px;
+                }
+            }
+            &-detail {
+                padding-right: 30px;
+                // left: 50%;
+                bottom: 108px;
+                // .transformer (translate(-50%,0));
+            }
+        }
+    }
 }
 @media all and (max-width: 483px) {
     .header {
@@ -94,6 +141,33 @@
                 }
             }
                
+        }
+    }
+    .banner {
+        .banner-left-button{
+            button{
+                
+                 width: 70px;
+                 height: 20px;
+                 font-size: 11px;
+            }
+         }
+        &-left {
+            &-content {
+                img {
+                    .transit(all, 1.5s);
+                    height: 24px;
+                    width: 181px;
+                    bottom: 30px;
+                    right: 26px;
+                }
+            }
+            &-detail {
+                padding-right: 30px;
+                // left: 50%;
+                bottom: 50px;
+                // .transformer (translate(-50%,0));
+            }
         }
     }
     
