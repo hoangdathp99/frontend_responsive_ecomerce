@@ -134,3 +134,102 @@
         }
     } 
 }
+.feature-items {
+    padding: 44px 0;
+    &-group {
+        padding: 0 14px;
+        .title{  
+            .shop-name{
+                font-family: "Montserrat";
+                font-weight: 700;
+                font-size:12px;
+                text-transform: uppercase;
+                letter-spacing: 0.5em;
+                color: #8262b5;
+                margin-bottom: 10px;
+            }      
+            .content{
+                font-family: "Montserrat";
+                font-weight: 700;
+                font-size:24px;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                color: #000;
+                margin-bottom: 23px;
+            }
+            hr{
+                margin: 14px 0;
+                border: 1px solid #8262b5;
+                width: 50px;
+            }    
+        }
+    }
+    &-row{
+        margin: 0 -14px;
+        padding-top: 10px;
+        .product{
+            .col(25%);
+            .image {
+                position: relative;
+                img {
+                    display: block;
+                    width: 100%;
+                    
+                }
+                .add-cartbutton{
+                    position: absolute;
+                    left: 5px;
+                    bottom: 5px;
+                    width: 100%;
+                    button{
+                        background-color: #fff;
+                        width: 118px;
+                        height: 40px;
+                        border: none;
+                        font-family: "Montserrat";
+                        font-weight: 400;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                   }
+                    a{
+                        align-items: center;
+                        color:#424242;
+                    }
+                }
+            }
+            .name {
+                font-family: "Montserrat";
+                font-weight: 400;
+                font-size: 14px;
+                margin-top: 18px;
+            }
+            .rating {
+                display: inline-block;
+                i{
+                    width: 10px;
+                    color: #d1d1d1;
+                    font-size: 11px;
+                    padding-top: 12px;
+                    
+                }
+                .checked {
+                    color: #f8ba04;
+                }
+            }
+            .price {
+                padding-top: 2px;
+                font-family: "Open_Sans";
+                font-size: 16px;
+                .off-sale{
+                    font-weight: 400;
+                    text-decoration: line-through;
+                    color: #999999;
+                }
+                .sale{
+                    font-weight: 700;
+                    color: #8262b5
+                }
+            }
+        }
+    }
+}
