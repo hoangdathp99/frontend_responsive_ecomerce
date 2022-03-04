@@ -2,16 +2,19 @@
     .logo-mobile {
         display: block;
     }
+
     .menu-bar {
         &-inner {
             .logo {
                 display: none;
             }
-            .nav-bar{
+
+            .nav-bar {
                 nav {
                     .nav-icon {
                         display: block;
                     }
+
                     .navbar {
                         padding: none;
                         display: block;
@@ -27,99 +30,113 @@
                         z-index: 999;
                         border-right: 2px solid @bg-header;
                         border-bottom: 2px solid @bg-header;
+
                         .nav-title {
                             display: block;
                             // width: 100%;
                         }
-                        
+
                         .nav-item {
                             // display: none;
                             display: block;
+
                             // width: 100%;
-                            &:last-child { 
-                                
-                            }
+                            &:last-child {}
+
                             padding: 5px 0;
                         }
-                        
+
                     }
+
                     .active {
-                            .transformer(translateX(0%));
+                        .transformer(translateX(0%));
                     }
                 }
+
                 .search {
                     width: 150px;
                 }
 
             }
-            
+
         }
     }
-    
+
 }
-@media all and (max-width: 1200px){
-    
+
+@media all and (max-width: 1200px) {
+
     .banner {
         &-left {
             .transit(all, 1.5s);
             width: 100%;
         }
+
         &-right {
             .transit(all, 1.5s);
             padding: 0 15px;
             margin: 0;
             width: 100%;
-            &-item {
-            }
+
+            &-item {}
         }
+
         .banner-col {
             align-items: center;
-            
-        }
-    }
-    .news {
-        .slider{
-            &-item{
-                .news-img{
-                    .news-date{
-                        .transit(all, 1.5s);
-                        margin: 16px 15px;
-                        .date{
-                            .transit(all, 1.5s);
-                            width: 40px;
-                            height: 40px;
-                        }
-                        .month{
-                            .transit(all, 1.5s);
-                            font-size: 11px;
-                        }
-                        .day{
-                            .transit(all, 1.5s);
-                            font-size: 13px;
-                        }
-                    }
-                } 
-                .slider-content{
-                    .slider-title{
-                        font-size: 13px;
-                    }
-                    .slider-details{
-                        font-size: 12px;
-                        line-height: 1.2;
-                    }
-            }
-           
 
-            }
         }
     }
+
+    // .news {
+    //     .slider {
+    //         &-item {
+    //             .news-img {
+    //                 .news-date {
+    //                     .transit(all, 1.5s);
+    //                     margin: 16px 15px;
+
+    //                     .date {
+    //                         .transit(all, 1.5s);
+    //                         width: 40px;
+    //                         height: 40px;
+    //                     }
+
+    //                     .month {
+    //                         .transit(all, 1.5s);
+    //                         font-size: 11px;
+    //                     }
+
+    //                     .day {
+    //                         .transit(all, 1.5s);
+    //                         font-size: 13px;
+    //                     }
+    //                 }
+    //             }
+
+    //             .slider-content {
+    //                 .slider-title {
+    //                     font-size: 13px;
+    //                 }
+
+    //                 .slider-details {
+    //                     font-size: 12px;
+    //                     line-height: 1.2;
+    //                 }
+    //             }
+
+
+    //         }
+    //     }
+    // }
 }
+
 @media all and (max-width: 900px) {
     .header {
         &-inner {
             .control-box {
                 .control-box-icon {
-                        margin-left: 10px;
+                    margin-left: 10px;
+
                     .content {
                         display: none;
                     }
@@ -128,16 +145,18 @@
         }
     }
 }
+
 @media all and (max-width: 768px) {
     .banner {
-        .banner-left-button{
-            button{
-                
-                 width: 81.1px;
-                 height: 30px;
-                 font-size: 11px;
+        .banner-left-button {
+            button {
+
+                width: 81.1px;
+                height: 30px;
+                font-size: 11px;
             }
-         }
+        }
+
         &-left {
             &-content {
                 img {
@@ -148,6 +167,7 @@
                     right: 26px;
                 }
             }
+
             &-detail {
                 padding-right: 30px;
                 // left: 50%;
@@ -156,6 +176,7 @@
             }
         }
     }
+
     .feature-items {
         &-row {
             .product {
@@ -165,6 +186,7 @@
         }
     }
 }
+
 @media all and (max-width: 483px) {
     .header {
         &-inner {
@@ -173,30 +195,34 @@
             }
         }
     }
+
     .menu-bar {
         &-inner {
-            .nav-bar{
+            .nav-bar {
                 nav {
                     .nav-icon {
                         display: block;
                     }
+
                     .navbar {
                         width: 50%;
                     }
                 }
             }
-               
+
         }
     }
+
     .banner {
-        .banner-left-button{
-            button{
-                
-                 width: 70px;
-                 height: 20px;
-                 font-size: 11px;
+        .banner-left-button {
+            button {
+
+                width: 70px;
+                height: 20px;
+                font-size: 11px;
             }
-         }
+        }
+
         &-left {
             &-content {
                 img {
@@ -207,6 +233,7 @@
                     right: 26px;
                 }
             }
+
             &-detail {
                 padding-right: 30px;
                 // left: 50%;
@@ -215,8 +242,9 @@
             }
         }
     }
-    
+
 }
+
 @media all and (max-width: 375px) {
     .feature-items {
         &-row {
