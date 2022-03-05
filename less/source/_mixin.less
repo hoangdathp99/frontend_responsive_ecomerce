@@ -3,20 +3,29 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .transformer (@scale) {
     transform: @scale;
     -webkit-transform: @scale;
     -moz-transform: @scale;
     -o-transform: @scale;
 }
+
 .transit (@scale, @sec) {
     transition: @scale, @sec;
     -webkit-transition: @scale, @sec;
     -moz-transition: @scale, @sec;
     -o-transition: @scale, @sec;
 }
+
 .col (@width) {
     width: @width;
     padding: 25px 15px 24px 15px;
+    box-sizing: border-box;
+}
+
+.col-footer (@width) {
+    width: @width;
+    padding: 50px 15px 42px 15px;
     box-sizing: border-box;
 }

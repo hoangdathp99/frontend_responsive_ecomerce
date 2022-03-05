@@ -1,0 +1,217 @@
+.footer {
+    background-color: @bg-header;
+
+    .footer-top {
+        height: auto;
+        border-bottom: 1px solid #393939;
+    }
+
+    .footer-bottom {
+
+        height: auto;
+
+        span {
+            font-family: "Open_Sans";
+            font-weight: 400;
+            font-size: 14px;
+            color: @footer-text-color;
+            letter-spacing: 0.016em;
+        }
+
+        .row {
+            padding: 25px 15px;
+            justify-content: space-between;
+            border-bottom: 1px solid #393939;
+
+            .payment {
+                font-size: 22.6px;
+                color: @footer-text-color;
+            }
+        }
+
+    }
+
+    .about {
+        font-family: "Open_Sans";
+        font-size: 14.5px;
+        font-weight: 400;
+        color: @footer-text-color;
+        padding-top: 24px;
+        .col-footer(25%);
+
+
+        .social {
+            margin-top: 45px;
+
+            i {
+                margin-right: 30px;
+                color: #828282;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .name {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 16px;
+        color: #f7f7f7;
+        margin-top: 9px;
+        padding-bottom: 27px;
+        letter-spacing: 0.05em;
+        border-bottom: 1px solid #393939;
+    }
+
+    .show {
+        display: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+    }
+
+    .hide {
+        padding-top: 20px;
+        display: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+    }
+
+    .describe {
+        font-family: "Open_Sans";
+        font-size: 14.5px;
+        font-weight: 400;
+        color: @footer-text-color;
+        line-height: 1.5;
+        padding-top: 24px;
+    }
+
+
+
+    .navigation {
+        .col-footer(50%);
+        padding: 50px 112px 0px 112px;
+
+        .show-btn-group {
+            display: none;
+            width: 100%;
+            box-sizing: border-box;
+            color: @footer-text-color;
+            font-family: "Open_Sans";
+            font-size: 14px;
+            font-weight: 400;
+
+            .show-left {
+                width: 54%;
+            }
+
+        }
+
+        nav {
+            // justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+
+            // .navbar-footer-right {
+            //     // padding-right: 125px;
+            // }
+
+            .nav-item {
+                width: 46%;
+                box-sizing: border-box;
+
+                &-right {
+                    width: 54%;
+                }
+
+                font-family: "Open_Sans";
+                font-size: 14px;
+                font-weight: 400;
+                // color: #888888;
+                // line-height: 1.5;
+                margin-bottom: 9px;
+
+
+            }
+
+            a {
+                color: @footer-text-color;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: #fff;
+                }
+            }
+
+
+
+
+
+        }
+
+
+    }
+
+    .contact {
+
+        .col-footer(25%);
+        padding-right: 65px;
+
+        nav {
+            padding-top: 30px;
+        }
+
+        i {
+            padding-right: 14px;
+
+            .icon {
+                margin: auto 0;
+            }
+        }
+
+        li {
+            display: flex;
+            padding-bottom: 10px;
+
+            .content {
+                line-height: 2.2;
+                margin-top: -8px;
+
+            }
+        }
+
+        .address {
+            &-mobile {
+                display: none;
+            }
+        }
+
+        .phone {
+            &-mobile {
+                display: none;
+            }
+
+            i {
+                font-size: 12px;
+                padding-right: 19px;
+            }
+
+
+        }
+
+        .mail {
+            i {
+                font-size: 15px;
+                padding-right: 15px;
+            }
+
+            &-mobile {
+                display: none
+            }
+        }
+    }
+}

@@ -87,47 +87,21 @@
         }
     }
 
-    // .news {
-    //     .slider {
-    //         &-item {
-    //             .news-img {
-    //                 .news-date {
-    //                     .transit(all, 1.5s);
-    //                     margin: 16px 15px;
+    .footer {
+        .footer-top {
+            height: 400px;
 
-    //                     .date {
-    //                         .transit(all, 1.5s);
-    //                         width: 40px;
-    //                         height: 40px;
-    //                     }
+            .navigation {
+                padding: 50px 85px;
 
-    //                     .month {
-    //                         .transit(all, 1.5s);
-    //                         font-size: 11px;
-    //                     }
-
-    //                     .day {
-    //                         .transit(all, 1.5s);
-    //                         font-size: 13px;
-    //                     }
-    //                 }
-    //             }
-
-    //             .slider-content {
-    //                 .slider-title {
-    //                     font-size: 13px;
-    //                 }
-
-    //                 .slider-details {
-    //                     font-size: 12px;
-    //                     line-height: 1.2;
-    //                 }
-    //             }
-
-
-    //         }
-    //     }
-    // }
+                nav {
+                    .navbar-footer-right {
+                        padding-right: 88px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media all and (max-width: 900px) {
@@ -144,16 +118,70 @@
             }
         }
     }
+
+    .footer {
+
+        .contact {
+            padding-right: 15px;
+
+            .describe {
+
+                // padding: 0;
+
+                .address {
+                    display: none;
+                }
+
+                .phone {
+                    display: none;
+                }
+
+                .mail {
+                    display: none;
+                }
+
+                .address-mobile {
+                    display: block;
+                }
+
+                .phone-mobile {
+                    display: block;
+                }
+
+                .mail-mobile {
+                    display: block;
+                }
+
+                .content {
+                    display: none;
+                }
+            }
+        }
+
+        .footer-top {
+            .about {
+                .show {
+                    display: block;
+                }
+
+                .describe {
+                    display: none;
+                }
+            }
+        }
+
+
+    }
+
+
+
 }
 
 @media all and (max-width: 768px) {
     .banner {
         .banner-left-button {
             button {
-
-                width: 81.1px;
-                height: 30px;
-                font-size: 11px;
+                transform: scale(0.8)
             }
         }
 
@@ -161,8 +189,7 @@
             &-content {
                 img {
                     .transit(all, 1.5s);
-                    height: 34px;
-                    width: 256px;
+                    transform: scale(0.8);
                     bottom: 30px;
                     right: 26px;
                 }
@@ -184,6 +211,83 @@
                 .col(50%);
             }
         }
+    }
+
+    .footer {
+        .footer-top {
+            height: 500px;
+
+            .about {
+                .col-footer(30%);
+
+                .social {
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .navigation {
+                .col-footer(40%);
+
+                .show-btn-group {
+                    display: flex;
+                }
+
+                nav {
+                    .nav-item {
+                        display: none;
+                        width: 50%;
+
+                        &-right {
+                            display: none;
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+
+            .contact {
+                .col-footer(30%);
+            }
+        }
+
+    }
+}
+
+@media all and (max-width: 530px) {
+    .footer {
+        .footer-top {
+
+            .about {
+                .col-footer(50%);
+            }
+
+            .navigation {
+                .col-footer(50%);
+            }
+
+            .contact {
+
+                .col-footer(100%);
+                display: flex;
+                padding: 0;
+
+                .name {
+                    border: none;
+                    border-right: 1px solid #393939;
+                    margin-top: 0;
+                    padding-right: 10px;
+                    padding-bottom: 0;
+                }
+
+                .describe {
+                    padding: 0px 15px;
+                    display: flex;
+                }
+            }
+        }
+
     }
 }
 
@@ -217,9 +321,7 @@
         .banner-left-button {
             button {
 
-                width: 70px;
-                height: 20px;
-                font-size: 11px;
+                transform: scale(0.6)
             }
         }
 

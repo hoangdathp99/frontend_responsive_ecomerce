@@ -552,6 +552,163 @@ ul li {
 .news .slider-item:hover .slider-title {
   color: #8262b5;
 }
+.footer {
+  background-color: #222;
+}
+.footer .footer-top {
+  height: auto;
+  border-bottom: 1px solid #393939;
+}
+.footer .footer-bottom {
+  height: auto;
+}
+.footer .footer-bottom span {
+  font-family: "Open_Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: #888888;
+  letter-spacing: 0.016em;
+}
+.footer .footer-bottom .row {
+  padding: 25px 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid #393939;
+}
+.footer .footer-bottom .row .payment {
+  font-size: 22.6px;
+  color: #888888;
+}
+.footer .about {
+  font-family: "Open_Sans";
+  font-size: 14.5px;
+  font-weight: 400;
+  color: #888888;
+  padding-top: 24px;
+  width: 25%;
+  padding: 50px 15px 42px 15px;
+  box-sizing: border-box;
+}
+.footer .about .social {
+  margin-top: 45px;
+}
+.footer .about .social i {
+  margin-right: 30px;
+  color: #828282;
+  font-size: 15px;
+}
+.footer .name {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  color: #f7f7f7;
+  margin-top: 9px;
+  padding-bottom: 27px;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #393939;
+}
+.footer .show {
+  display: none;
+}
+.footer .show:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.footer .hide {
+  padding-top: 20px;
+  display: none;
+}
+.footer .hide:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.footer .describe {
+  font-family: "Open_Sans";
+  font-size: 14.5px;
+  font-weight: 400;
+  color: #888888;
+  line-height: 1.5;
+  padding-top: 24px;
+}
+.footer .navigation {
+  width: 50%;
+  padding: 50px 15px 42px 15px;
+  box-sizing: border-box;
+  padding: 50px 112px 0px 112px;
+}
+.footer .navigation .show-btn-group {
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+  color: #888888;
+  font-family: "Open_Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer .navigation .show-btn-group .show-left {
+  width: 54%;
+}
+.footer .navigation nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .navigation nav .nav-item {
+  width: 46%;
+  box-sizing: border-box;
+  font-family: "Open_Sans";
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+.footer .navigation nav .nav-item-right {
+  width: 54%;
+}
+.footer .navigation nav a {
+  color: #888888;
+}
+.footer .navigation nav a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.footer .contact {
+  width: 25%;
+  padding: 50px 15px 42px 15px;
+  box-sizing: border-box;
+  padding-right: 65px;
+}
+.footer .contact nav {
+  padding-top: 30px;
+}
+.footer .contact i {
+  padding-right: 14px;
+}
+.footer .contact i .icon {
+  margin: auto 0;
+}
+.footer .contact li {
+  display: flex;
+  padding-bottom: 10px;
+}
+.footer .contact li .content {
+  line-height: 2.2;
+  margin-top: -8px;
+}
+.footer .contact .address-mobile {
+  display: none;
+}
+.footer .contact .phone-mobile {
+  display: none;
+}
+.footer .contact .phone i {
+  font-size: 12px;
+  padding-right: 19px;
+}
+.footer .contact .mail i {
+  font-size: 15px;
+  padding-right: 15px;
+}
+.footer .contact .mail-mobile {
+  display: none;
+}
 @media all and (max-width: 1380px) {
   .logo-mobile {
     display: block;
@@ -620,6 +777,15 @@ ul li {
   .banner .banner-col {
     align-items: center;
   }
+  .footer .footer-top {
+    height: 400px;
+  }
+  .footer .footer-top .navigation {
+    padding: 50px 85px;
+  }
+  .footer .footer-top .navigation nav .navbar-footer-right {
+    padding-right: 88px;
+  }
 }
 @media all and (max-width: 900px) {
   .header-inner .control-box .control-box-icon {
@@ -628,20 +794,47 @@ ul li {
   .header-inner .control-box .control-box-icon .content {
     display: none;
   }
+  .footer .contact {
+    padding-right: 15px;
+  }
+  .footer .contact .describe .address {
+    display: none;
+  }
+  .footer .contact .describe .phone {
+    display: none;
+  }
+  .footer .contact .describe .mail {
+    display: none;
+  }
+  .footer .contact .describe .address-mobile {
+    display: block;
+  }
+  .footer .contact .describe .phone-mobile {
+    display: block;
+  }
+  .footer .contact .describe .mail-mobile {
+    display: block;
+  }
+  .footer .contact .describe .content {
+    display: none;
+  }
+  .footer .footer-top .about .show {
+    display: block;
+  }
+  .footer .footer-top .about .describe {
+    display: none;
+  }
 }
 @media all and (max-width: 768px) {
   .banner .banner-left-button button {
-    width: 81.1px;
-    height: 30px;
-    font-size: 11px;
+    transform: scale(0.8);
   }
   .banner-left-content img {
     transition: all, 1.5s;
     -webkit-transition: all, 1.5s;
     -moz-transition: all, 1.5s;
     -o-transition: all, 1.5s;
-    height: 34px;
-    width: 256px;
+    transform: scale(0.8);
     bottom: 30px;
     right: 26px;
   }
@@ -658,6 +851,68 @@ ul li {
     padding: 25px 15px 24px 15px;
     box-sizing: border-box;
   }
+  .footer .footer-top {
+    height: 500px;
+  }
+  .footer .footer-top .about {
+    width: 30%;
+    padding: 50px 15px 42px 15px;
+    box-sizing: border-box;
+  }
+  .footer .footer-top .about .social i {
+    margin-right: 10px;
+  }
+  .footer .footer-top .navigation {
+    width: 40%;
+    padding: 50px 15px 42px 15px;
+    box-sizing: border-box;
+  }
+  .footer .footer-top .navigation .show-btn-group {
+    display: flex;
+  }
+  .footer .footer-top .navigation nav .nav-item {
+    display: none;
+    width: 50%;
+  }
+  .footer .footer-top .navigation nav .nav-item-right {
+    display: none;
+    width: 50%;
+  }
+  .footer .footer-top .contact {
+    width: 30%;
+    padding: 50px 15px 42px 15px;
+    box-sizing: border-box;
+  }
+}
+@media all and (max-width: 530px) {
+  .footer .footer-top .about {
+    width: 50%;
+    padding: 50px 15px 42px 15px;
+    box-sizing: border-box;
+  }
+  .footer .footer-top .navigation {
+    width: 50%;
+    padding: 50px 15px 42px 15px;
+    box-sizing: border-box;
+  }
+  .footer .footer-top .contact {
+    width: 100%;
+    padding: 50px 15px 42px 15px;
+    box-sizing: border-box;
+    display: flex;
+    padding: 0;
+  }
+  .footer .footer-top .contact .name {
+    border: none;
+    border-right: 1px solid #393939;
+    margin-top: 0;
+    padding-right: 10px;
+    padding-bottom: 0;
+  }
+  .footer .footer-top .contact .describe {
+    padding: 0px 15px;
+    display: flex;
+  }
 }
 @media all and (max-width: 483px) {
   .header-inner .web-info-button {
@@ -670,9 +925,7 @@ ul li {
     width: 50%;
   }
   .banner .banner-left-button button {
-    width: 70px;
-    height: 20px;
-    font-size: 11px;
+    transform: scale(0.6);
   }
   .banner-left-content img {
     transition: all, 1.5s;
