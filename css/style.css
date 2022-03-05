@@ -777,9 +777,6 @@ ul li {
   .banner .banner-col {
     align-items: center;
   }
-  .footer .footer-top {
-    height: 400px;
-  }
   .footer .footer-top .navigation {
     padding: 50px 85px;
   }
@@ -850,9 +847,6 @@ ul li {
     width: 50%;
     padding: 25px 15px 24px 15px;
     box-sizing: border-box;
-  }
-  .footer .footer-top {
-    height: 500px;
   }
   .footer .footer-top .about {
     width: 30%;
