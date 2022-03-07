@@ -61,13 +61,10 @@
         &-content {
 
             img {
-                position: absolute;
-                bottom: 40px;
-                right: 90px;
-                display: block;
-                height: 43px;
+                right: -6px;
                 width: 324px;
-
+                margin-right: -5px;
+                margin-bottom: 2px;
             }
         }
 
@@ -76,11 +73,10 @@
         &-detail {
             position: absolute;
             text-align: end;
-            right: 15px;
-            padding-right: 94px;
             // left: 50%;
-            bottom: 158px;
-            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-38px, 39px);
             // .transformer (translate(-50%,0));
         }
     }
@@ -95,8 +91,11 @@
         &-item {
             &-inner {
                 cursor: pointer;
-                // padding: 15px 0;
 
+                // padding: 15px 0;
+                img {
+                    // width: 100%;
+                }
             }
 
             position: relative;
@@ -104,31 +103,61 @@
             overflow: hidden;
         }
 
+        &-1-content {
+            position: absolute;
+            top: 50%;
+            text-transform: uppercase;
+            transform: translate(-124px, -17px);
+            left: 50%;
+            width: 187px;
+
+            .content-line1 {
+                font-family: "Montserrat";
+                font-weight: 400;
+                font-size: 16px;
+                // padding-bottom: 17px;
+                letter-spacing: 0.2em;
+                color: @banner-title-color;
+            }
+
+            .content-line2 {
+                font-family: "Montserrat";
+                font-weight: 700;
+                font-size: 20px;
+
+                // padding-bottom: 17px;
+                // letter-spacing: 0.2em;
+            }
+        }
+
         &-content {
             position: absolute;
-            bottom: 280px;
-            left: 38px;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-142px, -25px);
+
 
             .title {
                 font-family: "Montserrat";
                 font-weight: 400;
                 font-size: 16px;
                 letter-spacing: 0.2em;
+                color: @banner-title-color;
             }
 
             .content {
                 font-family: "Montserrat";
                 font-weight: 700;
                 font-size: 20px;
-                padding-bottom: 18px;
+                padding-bottom: 17px;
             }
 
             .banner-right-button {
-                padding: 0px 0px 2px 2px;
+                margin-left: 2px;
 
                 button {
                     background-color: @btn-content-color;
-                    width: 108px;
+                    width: 110px;
                     height: 40px;
                     border: none;
                     font-family: "Montserrat";
@@ -197,11 +226,16 @@
 
             .image {
                 position: relative;
+                padding-top: calc(264 / 214 *100%);
 
                 img {
                     display: block;
                     width: 100%;
-
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    object-fit: cover;
                 }
 
                 .add-cartbutton {
@@ -288,8 +322,11 @@
     }
 
     .slider {
+
         .slick-dots {
-            margin-top: 15px;
+            bottom: -31px;
+
+
 
             li {
                 button:before {
@@ -360,7 +397,7 @@
             }
 
             .slider-content {
-                padding: 15px 17px;
+                padding: 16px 19px;
 
                 // align-items: center;
                 // text-align: left;
@@ -368,7 +405,7 @@
 
                     font-family: "Montserrat";
                     font-size: 16px;
-                    margin-bottom: 19px;
+                    margin-bottom: 17px;
                     font-weight: 400;
                     color: #000;
                 }
@@ -376,16 +413,18 @@
                 .slider-details {
                     font-family: 'Open_Sans';
                     font-weight: 400;
-                    font-size: 15px;
+                    font-size: 14px;
                     color: #424242;
-                    line-height: 1.5;
+                    line-height: 1.59;
+                    letter-spacing: 0.017em;
                 }
             }
 
             .react-btn {
                 border-top: 1px solid #ededed;
                 display: flex;
-                padding: 20px;
+                padding: 16px 20px;
+                padding-bottom: 19px;
                 color: #c4c4c4;
                 font-family: "Open_Sans";
                 font-weight: 400;

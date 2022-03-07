@@ -73,6 +73,7 @@ ul li {
 }
 .logo-mobile {
   display: none;
+  text-align: center;
 }
 .header {
   padding: 0 15px;
@@ -90,6 +91,13 @@ ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header-inner a {
+  font-size: 14px;
+  font-family: "Open_Sans";
+  font-weight: 400;
+  background-color: #222;
+  color: #525252;
 }
 .header-inner .web-info {
   display: flex;
@@ -238,7 +246,7 @@ ul li {
 }
 .menu-bar-inner .form-control-item .cart i {
   vertical-align: middle;
-  font-size: 29px ;
+  font-size: 29px;
   text-align: center;
 }
 .menu-bar-inner .form-control-item .cart .control-item-love {
@@ -286,20 +294,17 @@ ul li {
   width: 100%;
 }
 .banner-left-content img {
-  position: absolute;
-  bottom: 40px;
-  right: 90px;
-  display: block;
-  height: 43px;
+  right: -6px;
   width: 324px;
+  margin-right: -5px;
+  margin-bottom: 2px;
 }
 .banner-left-detail {
   position: absolute;
   text-align: end;
-  right: 15px;
-  padding-right: 94px;
-  bottom: 158px;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-38px, 39px);
 }
 .banner-right {
   padding: 0 15px;
@@ -315,29 +320,51 @@ ul li {
 .banner-right-item-inner {
   cursor: pointer;
 }
+.banner-right-1-content {
+  position: absolute;
+  top: 50%;
+  text-transform: uppercase;
+  transform: translate(-124px, -17px);
+  left: 50%;
+  width: 187px;
+}
+.banner-right-1-content .content-line1 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  color: #616161;
+}
+.banner-right-1-content .content-line2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+}
 .banner-right-content {
   position: absolute;
-  bottom: 280px;
-  left: 38px;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-142px, -25px);
 }
 .banner-right-content .title {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.2em;
+  color: #616161;
 }
 .banner-right-content .content {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
 }
 .banner-right-content .banner-right-button {
-  padding: 0px 0px 2px 2px;
+  margin-left: 2px;
 }
 .banner-right-content .banner-right-button button {
   background-color: #8262b5;
-  width: 108px;
+  width: 110px;
   height: 40px;
   border: none;
   font-family: "Montserrat";
@@ -393,10 +420,16 @@ ul li {
 }
 .feature-items-row .product .image {
   position: relative;
+  padding-top: calc(264 / 214 * 100%);
 }
 .feature-items-row .product .image img {
   display: block;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
 }
 .feature-items-row .product .image .add-cartbutton {
   position: absolute;
@@ -469,7 +502,7 @@ ul li {
   width: auto;
 }
 .news .slider .slick-dots {
-  margin-top: 15px;
+  bottom: -31px;
 }
 .news .slider .slick-dots li button:before {
   font-size: 10px;
@@ -521,26 +554,28 @@ ul li {
   margin-bottom: 6px;
 }
 .news .slider-item .slider-content {
-  padding: 15px 17px;
+  padding: 16px 19px;
 }
 .news .slider-item .slider-content .slider-title {
   font-family: "Montserrat";
   font-size: 16px;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
   font-weight: 400;
   color: #000;
 }
 .news .slider-item .slider-content .slider-details {
   font-family: 'Open_Sans';
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   color: #424242;
-  line-height: 1.5;
+  line-height: 1.59;
+  letter-spacing: 0.017em;
 }
 .news .slider-item .react-btn {
   border-top: 1px solid #ededed;
   display: flex;
-  padding: 20px;
+  padding: 16px 20px;
+  padding-bottom: 19px;
   color: #c4c4c4;
   font-family: "Open_Sans";
   font-weight: 400;
@@ -628,6 +663,9 @@ ul li {
   color: #888888;
   line-height: 1.5;
   padding-top: 24px;
+}
+.footer .describe a {
+  color: #888888;
 }
 .footer .navigation {
   width: 50%;
@@ -758,6 +796,12 @@ ul li {
   }
 }
 @media all and (max-width: 1200px) {
+  .banner {
+    padding: 0;
+  }
+  .banner img {
+    width: 100%;
+  }
   .banner-left {
     transition: all, 1.5s;
     -webkit-transition: all, 1.5s;
@@ -774,8 +818,38 @@ ul li {
     margin: 0;
     width: 100%;
   }
+  .banner-right-item {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .banner-right-item-inner-2 {
+    position: relative;
+    overflow: hiden;
+    height: 100%;
+  }
+  .banner-right-item-inner-2 img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .banner-right-1-content {
+    transform: translateY(-21px);
+    left: 32px;
+    width: auto;
+  }
+  .banner-right-content {
+    transform: translateY(51px);
+    left: 13px;
+  }
   .banner .banner-col {
-    align-items: center;
+    align-items: none;
+    display: flex;
+    margin: 0 -15px;
+    height: auto;
+    overflow: hidden;
+  }
+  .feature-items {
+    padding: 0;
   }
   .footer .footer-top .navigation {
     padding: 50px 85px;
@@ -823,22 +897,6 @@ ul li {
   }
 }
 @media all and (max-width: 768px) {
-  .banner .banner-left-button button {
-    transform: scale(0.8);
-  }
-  .banner-left-content img {
-    transition: all, 1.5s;
-    -webkit-transition: all, 1.5s;
-    -moz-transition: all, 1.5s;
-    -o-transition: all, 1.5s;
-    transform: scale(0.8);
-    bottom: 30px;
-    right: 26px;
-  }
-  .banner-left-detail {
-    padding-right: 30px;
-    bottom: 108px;
-  }
   .feature-items-row .product {
     transition: all, 1.5s;
     -webkit-transition: all, 1.5s;
@@ -894,7 +952,7 @@ ul li {
     padding: 50px 15px 42px 15px;
     box-sizing: border-box;
     display: flex;
-    padding: 0;
+    padding: 0 15px;
   }
   .footer .footer-top .contact .name {
     border: none;
@@ -918,22 +976,8 @@ ul li {
   .menu-bar-inner .nav-bar nav .navbar {
     width: 50%;
   }
-  .banner .banner-left-button button {
-    transform: scale(0.6);
-  }
-  .banner-left-content img {
-    transition: all, 1.5s;
-    -webkit-transition: all, 1.5s;
-    -moz-transition: all, 1.5s;
-    -o-transition: all, 1.5s;
-    height: 24px;
-    width: 181px;
-    bottom: 30px;
-    right: 26px;
-  }
-  .banner-left-detail {
-    padding-right: 30px;
-    bottom: 50px;
+  .banner .banner-left-button {
+    transform: scale(0.8);
   }
 }
 @media all and (max-width: 375px) {

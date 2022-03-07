@@ -1,19 +1,24 @@
 .cover {
-    position: fixed;;
+    position: fixed;
+    ;
     width: 100%;
     height: 100vh;
     background-color: #fff;
     opacity: 0;
     z-index: -1;
 }
+
 .cover.active {
     opacity: 0.3;
     z-index: 100;
     .transit(all, .5s);
 }
+
 .logo-mobile {
     display: none;
+    text-align: center;
 }
+
 .header {
     padding: 0 15px;
     font-size: 14px;
@@ -25,13 +30,25 @@
     height: 45px;
     letter-spacing: 0.01em;
     align-items: center;
+
     &-inner {
+        a {
+            font-size: 14px;
+            font-family: "Open_Sans";
+            font-weight: 400;
+            background-color: @bg-header;
+            color: @header-color;
+        }
+
         .flex();
+
         .web-info {
             display: flex;
+
             &-button {
                 display: flex;
             }
+
             .info-icon {
                 width: 20px;
                 height: 20px;
@@ -43,18 +60,23 @@
                 margin-left: -4px;
             }
         }
+
         .web-info.active-nav {
             display: none;
         }
+
         .control-box.active-nav {
             display: none;
         }
+
         .control-box {
             display: flex;
+
             &-icon {
                 display: flex;
                 margin-left: 27px;
-                .setting-icon{
+
+                .setting-icon {
                     height: 20px;
                     width: 20px;
                     line-height: 20px;
@@ -63,6 +85,7 @@
                     color: @header-color;
                     margin-right: 1px;
                 }
+
                 .icon {
                     height: 20px;
                     width: 20px;
@@ -76,6 +99,7 @@
         }
     }
 }
+
 .menu-bar {
     align-items: center;
     padding: 20px 15px 19px 15px;
@@ -84,10 +108,12 @@
     font-weight: 700;
     // height: 79px;
     border-bottom: 1px solid @boder-menu;
+
     &-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .shop-name {
             height: 36px;
             width: 184px;
@@ -102,23 +128,28 @@
             font-size: 20px;
             letter-spacing: 0.764em;
         }
+
         .nav-bar {
             .flex();
             box-sizing: border-box;
+
             nav {
-                .nav-icon { 
+                .nav-icon {
                     display: none;
                     font-size: 14px;
                     text-transform: uppercase;
+
                     i {
                         font-size: 22px;
                         vertical-align: bottom;
                         padding-right: 15px;
                     }
                 }
+
                 .navbar {
                     align-items: center;
                     display: flex;
+
                     .nav-title {
                         display: none;
                         text-transform: uppercase;
@@ -130,32 +161,40 @@
                         // width: 100%;
                         padding: 0 15px;
                     }
+
                     .nav-item {
                         margin-left: 28px;
                         margin-right: 28px;
                         display: inline-block;
+
                         a {
                             text-transform: uppercase;
                             font-size: 14px;
                         }
-                        &:last-child { 
+
+                        &:last-child {
                             margin-right: 57px;
                         }
                     }
+
                     .nav-item.active {
-                        &>a{
+                        &>a {
                             color: #8262b5;
                         }
                     }
                 }
             }
+
             .search {
                 width: 152px;
+
                 form {
                     display: flex;
                     overflow: hidden;
+
                     .search-button {
                         align-items: center;
+
                         button {
                             border: none;
                             background-color: #fff;
@@ -171,34 +210,38 @@
 
                 }
             }
-            
+
         }
+
         .form-control-item {
             display: flex;
             align-items: center;
-            
+
             .cart {
                 i {
-                    vertical-align: middle; 
-                    font-size: 29px ; 
+                    vertical-align: middle;
+                    font-size: 29px;
                     text-align: center;
                 }
+
                 display: flex;
+
                 .control-item-love {
                     font-size: 29px;
                     padding-right: 30px;
-                    
+
                 }
+
                 .control-item-cart {
                     font-size: 29px;
                 }
             }
-            
+
         }
-        
-        
-        
-        
-        
+
+
+
+
+
     }
 }
