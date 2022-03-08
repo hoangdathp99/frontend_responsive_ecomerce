@@ -183,37 +183,29 @@
 }
 
 .feature-items {
-    padding: 44px 30px;
+    padding: 27px 30px;
 
     &-group {
         padding: 0 14px;
 
         .title {
-            .shop-name {
-                font-family: @main-font;
-                font-weight: 700;
-                font-size: 12px;
-                text-transform: uppercase;
-                letter-spacing: 0.5em;
-                color: @btn-content-color;
-                margin-bottom: 10px;
-            }
+            position: relative;
 
-            .content {
-                font-family: @main-font;
-                font-weight: 700;
-                font-size: 24px;
-                text-transform: uppercase;
-                letter-spacing: 0.1em;
-                color: @just-black;
-                margin-bottom: 23px;
-            }
+            .title(39px);
 
-            hr {
-                margin: 14px 0;
-                border: 1px solid @btn-content-color;
+            &::after {
+                position: absolute;
                 width: 50px;
+                content: "";
+                bottom: -26px;
+                border-top: 2px solid @btn-content-color;
             }
+
+            // hr {
+            //     margin: 14px 0;
+            //     border: 1px solid @btn-content-color;
+            //     width: 50px;
+            // }
         }
     }
 
@@ -316,16 +308,31 @@
     min-height: 707px;
     overflow: hidden;
     background-image: url("../img/Background.png");
-    margin-top: 10px;
+    margin-top: 27px;
     // &-inner {
 
     // }
 
     &-title {
-        width: fit-content;
-        margin: 0 auto;
-        padding-top: 80px;
-        padding-bottom: 30px;
+        text-align: center;
+        position: relative;
+        margin: 76px 96px 77px 104px;
+
+        // width: fit-content;
+        // margin: 0 auto;
+        // padding-top: 80px;
+        // padding-bottom: 30px;
+        .title(-18px);
+
+        &::after {
+            position: absolute;
+            width: 50px;
+            content: "";
+            bottom: -24px;
+            left: 50%;
+            transform: translateX(-28px);
+            border-top: 2px solid @btn-content-color;
+        }
     }
 
     .slider {
@@ -376,7 +383,7 @@
                     position: absolute;
                     padding: 6px 5px 3px 5px;
                     top: 0;
-                    margin: 22px 20px;
+                    margin: 20px 20px;
                     background-color: @news-date-color;
                     font-family: @main-font;
                     color: @pure-white;

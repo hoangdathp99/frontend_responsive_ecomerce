@@ -388,33 +388,38 @@ ul li {
   font-size: 14px;
 }
 .feature-items {
-  padding: 44px 30px;
+  padding: 27px 30px;
 }
 .feature-items-group {
   padding: 0 14px;
 }
-.feature-items-group .title .shop-name {
+.feature-items-group .title {
+  position: relative;
+}
+.feature-items-group .title h4 {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   color: #8262b5;
-  margin-bottom: 10px;
+  margin-bottom: -9px;
 }
-.feature-items-group .title .content {
+.feature-items-group .title h2 {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #000;
-  margin-bottom: 23px;
+  margin-bottom: 39px;
 }
-.feature-items-group .title hr {
-  margin: 14px 0;
-  border: 1px solid #8262b5;
+.feature-items-group .title::after {
+  position: absolute;
   width: 50px;
+  content: "";
+  bottom: -26px;
+  border-top: 2px solid #8262b5;
 }
 .feature-items-row {
   margin: 0 -14px;
@@ -496,13 +501,39 @@ ul li {
   min-height: 707px;
   overflow: hidden;
   background-image: url("../img/Background.png");
-  margin-top: 10px;
+  margin-top: 27px;
 }
 .news-title {
-  width: fit-content;
-  margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  text-align: center;
+  position: relative;
+  margin: 76px 96px 77px 104px;
+}
+.news-title h4 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: #8262b5;
+  margin-bottom: -9px;
+}
+.news-title h2 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000;
+  margin-bottom: -18px;
+}
+.news-title::after {
+  position: absolute;
+  width: 50px;
+  content: "";
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-28px);
+  border-top: 2px solid #8262b5;
 }
 .news .slider {
   justify-content: center;
@@ -540,7 +571,7 @@ ul li {
   position: absolute;
   padding: 6px 5px 3px 5px;
   top: 0;
-  margin: 22px 20px;
+  margin: 20px 20px;
   background-color: #a1d1dd;
   font-family: 'Montserrat';
   color: #fff;
