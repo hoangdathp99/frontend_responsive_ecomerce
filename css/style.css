@@ -218,7 +218,7 @@ ul li {
   color: #8262b5;
 }
 .menu-bar-inner .nav-bar .search {
-  width: 152px;
+  width: 125px;
 }
 .menu-bar-inner .nav-bar .search form {
   display: flex;
@@ -244,16 +244,20 @@ ul li {
 .menu-bar-inner .form-control-item .cart {
   display: flex;
 }
-.menu-bar-inner .form-control-item .cart i {
+.menu-bar-inner .form-control-item .cart a {
+  margin-left: 27px;
+  display: flex;
+}
+.menu-bar-inner .form-control-item .cart a i {
   vertical-align: middle;
   font-size: 29px;
   text-align: center;
 }
-.menu-bar-inner .form-control-item .cart .control-item-love {
+.menu-bar-inner .form-control-item .cart a .control-item-love {
   font-size: 29px;
   padding-right: 30px;
 }
-.menu-bar-inner .form-control-item .cart .control-item-cart {
+.menu-bar-inner .form-control-item .cart a .control-item-cart {
   font-size: 29px;
 }
 .banner {
@@ -438,7 +442,6 @@ ul li {
   position: absolute;
   left: 5px;
   bottom: 5px;
-  width: 100%;
 }
 .feature-items-row .product .image .add-cartbutton button {
   background-color: #fff;
@@ -453,6 +456,9 @@ ul li {
 .feature-items-row .product .image .add-cartbutton a {
   align-items: center;
   color: #424242;
+}
+.feature-items-row .product .image .add-cartbutton:hover a {
+  color: #8262b5;
 }
 .feature-items-row .product .name {
   font-family: 'Montserrat';
@@ -646,6 +652,7 @@ ul li {
 }
 .footer .show {
   display: none;
+  cursor: pointer;
 }
 .footer .show:hover {
   text-decoration: underline;
@@ -654,6 +661,7 @@ ul li {
 .footer .hide {
   padding-top: 20px;
   display: none;
+  cursor: pointer;
 }
 .footer .hide:hover {
   text-decoration: underline;
@@ -687,6 +695,18 @@ ul li {
 }
 .footer .navigation .show-btn-group .show-left {
   width: 54%;
+  cursor: pointer;
+}
+.footer .navigation .show-btn-group .show-left:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.footer .navigation .show-btn-group .show-right {
+  cursor: pointer;
+}
+.footer .navigation .show-btn-group .show-right:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 .footer .navigation nav {
   display: flex;
@@ -736,8 +756,20 @@ ul li {
 .footer .contact .address-mobile {
   display: none;
 }
+.footer .contact .address-mobile i {
+  cursor: pointer;
+}
+.footer .contact .address-mobile i:hover {
+  color: #fff;
+}
 .footer .contact .phone-mobile {
   display: none;
+}
+.footer .contact .phone-mobile i {
+  cursor: pointer;
+}
+.footer .contact .phone-mobile i:hover {
+  color: #fff;
 }
 .footer .contact .phone i {
   font-size: 12px;
@@ -749,6 +781,12 @@ ul li {
 }
 .footer .contact .mail-mobile {
   display: none;
+}
+.footer .contact .mail-mobile i {
+  cursor: pointer;
+}
+.footer .contact .mail-mobile i:hover {
+  color: #fff;
 }
 @media all and (max-width: 1380px) {
   .logo-mobile {
@@ -1005,6 +1043,9 @@ ul li {
     width: 79px;
     height: 23px;
     font-size: 8px;
+  }
+  .footer-bottom .payment {
+    line-height: 2;
   }
 }
 /*# sourceMappingURL=style.css.map */
