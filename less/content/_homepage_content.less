@@ -21,18 +21,18 @@
             width: 106px;
             height: 40px;
             border: none;
-            font-family: "Montserrat";
+            font-family: @main-font;
             font-weight: 400;
             font-size: 14px;
         }
 
         a {
             align-items: center;
-            color: #fff;
+            color: @pure-white;
         }
 
         // .button-content {
-        //     font-family: "Montserrat";
+        //     font-family: @main-font;
         //     font-weight: 400;
         //     font-size: 14px;
         //     // color: aqua;
@@ -94,7 +94,7 @@
 
                 // padding: 15px 0;
                 img {
-                    // width: 100%;
+                    width: 100%;
                 }
             }
 
@@ -112,7 +112,7 @@
             width: 187px;
 
             .content-line1 {
-                font-family: "Montserrat";
+                font-family: @main-font;
                 font-weight: 400;
                 font-size: 16px;
                 // padding-bottom: 17px;
@@ -121,7 +121,7 @@
             }
 
             .content-line2 {
-                font-family: "Montserrat";
+                font-family: @main-font;
                 font-weight: 700;
                 font-size: 20px;
 
@@ -138,7 +138,7 @@
 
 
             .title {
-                font-family: "Montserrat";
+                font-family: @main-font;
                 font-weight: 400;
                 font-size: 16px;
                 letter-spacing: 0.2em;
@@ -146,7 +146,7 @@
             }
 
             .content {
-                font-family: "Montserrat";
+                font-family: @main-font;
                 font-weight: 700;
                 font-size: 20px;
                 padding-bottom: 17px;
@@ -160,18 +160,18 @@
                     width: 110px;
                     height: 40px;
                     border: none;
-                    font-family: "Montserrat";
+                    font-family: @main-font;
                     font-weight: 400;
                     font-size: 14px;
                 }
 
                 a {
                     align-items: center;
-                    color: #fff;
+                    color: @pure-white;
                 }
 
                 .button-content {
-                    font-family: "Montserrat";
+                    font-family: @main-font;
                     font-weight: 400;
                     font-size: 14px;
                     // color: aqua;
@@ -190,28 +190,28 @@
 
         .title {
             .shop-name {
-                font-family: "Montserrat";
+                font-family: @main-font;
                 font-weight: 700;
                 font-size: 12px;
                 text-transform: uppercase;
                 letter-spacing: 0.5em;
-                color: #8262b5;
+                color: @btn-content-color;
                 margin-bottom: 10px;
             }
 
             .content {
-                font-family: "Montserrat";
+                font-family: @main-font;
                 font-weight: 700;
                 font-size: 24px;
                 text-transform: uppercase;
                 letter-spacing: 0.1em;
-                color: #000;
+                color: @just-black;
                 margin-bottom: 23px;
             }
 
             hr {
                 margin: 14px 0;
-                border: 1px solid #8262b5;
+                border: 1px solid @btn-content-color;
                 width: 50px;
             }
         }
@@ -245,11 +245,11 @@
                     width: 100%;
 
                     button {
-                        background-color: #fff;
+                        background-color: @pure-white;
                         width: 118px;
                         height: 40px;
                         border: none;
-                        font-family: "Montserrat";
+                        font-family: @main-font;
                         font-weight: 400;
                         font-size: 12px;
                         text-transform: uppercase;
@@ -257,13 +257,13 @@
 
                     a {
                         align-items: center;
-                        color: #424242;
+                        color: @add-cart-btn-text-color;
                     }
                 }
             }
 
             .name {
-                font-family: "Montserrat";
+                font-family: @main-font;
                 font-weight: 400;
                 font-size: 14px;
                 margin-top: 18px;
@@ -274,31 +274,31 @@
 
                 i {
                     width: 10px;
-                    color: #d1d1d1;
+                    color: @unlike-star-color;
                     font-size: 11px;
                     padding-top: 12px;
 
                 }
 
                 .checked {
-                    color: #f8ba04;
+                    color: @like-star-color;
                 }
             }
 
             .price {
                 padding-top: 2px;
-                font-family: "Open_Sans";
+                font-family: @content-font;
                 font-size: 16px;
 
                 .off-sale {
                     font-weight: 400;
                     text-decoration: line-through;
-                    color: #999999;
+                    color: @old-price-color;
                 }
 
                 .sale {
                     font-weight: 700;
-                    color: #8262b5
+                    color: @btn-content-color;
                 }
             }
         }
@@ -332,12 +332,12 @@
                 button:before {
                     font-size: 10px;
                     border-radius: 5px;
-                    color: #ccbfe0;
+                    color: @slick-dots-nonactive-color;
                 }
 
                 &.slick-active {
                     button:before {
-                        color: #8262b5;
+                        color: @btn-content-color;
                         transform: scale(1.4);
                     }
                 }
@@ -351,7 +351,7 @@
 
         &-item {
             width: auto;
-            background-color: #fff;
+            background-color: @pure-white;
             margin: 15px;
 
             .news-img {
@@ -370,16 +370,16 @@
                     padding: 6px 5px 3px 5px;
                     top: 0;
                     margin: 22px 20px;
-                    background-color: #a1d1dd;
-                    font-family: "Montserrat";
-                    color: #fff;
+                    background-color: @news-date-color;
+                    font-family: @main-font;
+                    color: @pure-white;
 
                     .date {
                         width: 48px;
                         height: 48px;
                         text-align: center;
-                        border: 1px solid #fff;
-                        border-bottom: 2px solid #fff;
+                        border: 1px solid @pure-white;
+                        border-bottom: 2px solid @pure-white;
                     }
 
                     .month {
@@ -403,30 +403,30 @@
                 // text-align: left;
                 .slider-title {
 
-                    font-family: "Montserrat";
+                    font-family: @main-font;
                     font-size: 16px;
                     margin-bottom: 17px;
                     font-weight: 400;
-                    color: #000;
+                    color: @just-black;
                 }
 
                 .slider-details {
                     font-family: 'Open_Sans';
                     font-weight: 400;
                     font-size: 14px;
-                    color: #424242;
+                    color: @news-content-detail;
                     line-height: 1.59;
                     letter-spacing: 0.017em;
                 }
             }
 
             .react-btn {
-                border-top: 1px solid #ededed;
+                border-top: 1px solid @news-border-color;
                 display: flex;
                 padding: 16px 20px;
                 padding-bottom: 19px;
-                color: #c4c4c4;
-                font-family: "Open_Sans";
+                color: @react-btn-color;
+                font-family: @content-font;
                 font-weight: 400;
                 font-size: 14px;
 
@@ -437,7 +437,7 @@
 
             &:hover {
                 .slider-title {
-                    color: #8262b5;
+                    color: @btn-content-color;
                 }
             }
         }
