@@ -1,24 +1,24 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat/static/Montserrat-Bold.ttf');
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Open_Sans';
-  src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
+  font-family: "Open_Sans";
+  src: url("../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Pacifico';
-  src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
+  font-family: "Pacifico";
+  src: url("../fonts/Pacifico/Pacifico-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -78,7 +78,7 @@ ul li {
 .header {
   padding: 0 15px;
   font-size: 14px;
-  font-family: 'Open_Sans';
+  font-family: "Open_Sans";
   font-weight: 400;
   background-color: #222;
   color: #525252;
@@ -94,7 +94,7 @@ ul li {
 }
 .header-inner a {
   font-size: 14px;
-  font-family: 'Open_Sans';
+  font-family: "Open_Sans";
   font-weight: 400;
   background-color: #222;
   color: #525252;
@@ -149,7 +149,7 @@ ul li {
   align-items: center;
   padding: 20px 15px 19px 15px;
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   border-bottom: 1px solid #ddd;
 }
@@ -273,7 +273,7 @@ ul li {
   width: 106px;
   height: 40px;
   border: none;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
 }
@@ -336,14 +336,14 @@ ul li {
   width: 187px;
 }
 .banner-right-1-content .content-line1 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.2em;
   color: #616161;
 }
 .banner-right-1-content .content-line2 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 20px;
 }
@@ -354,14 +354,14 @@ ul li {
   transform: translate(-142px, -25px);
 }
 .banner-right-content .title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.2em;
   color: #616161;
 }
 .banner-right-content .content {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 20px;
   padding-bottom: 17px;
@@ -374,7 +374,7 @@ ul li {
   width: 110px;
   height: 40px;
   border: none;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
 }
@@ -383,7 +383,7 @@ ul li {
   color: #fff;
 }
 .banner-right-content .banner-right-button .button-content {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
 }
@@ -397,7 +397,7 @@ ul li {
   position: relative;
 }
 .feature-items-group .title h4 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
@@ -406,7 +406,7 @@ ul li {
   margin-bottom: -9px;
 }
 .feature-items-group .title h2 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
@@ -453,7 +453,7 @@ ul li {
   width: 118px;
   height: 40px;
   border: none;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
@@ -466,7 +466,7 @@ ul li {
   color: #8262b5;
 }
 .feature-items-row .product .name {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
   margin-top: 18px;
@@ -485,7 +485,7 @@ ul li {
 }
 .feature-items-row .product .price {
   padding-top: 2px;
-  font-family: 'Open_Sans';
+  font-family: "Open_Sans";
   font-size: 16px;
 }
 .feature-items-row .product .price .off-sale {
@@ -509,7 +509,7 @@ ul li {
   margin: 76px 96px 77px 104px;
 }
 .news-title h4 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
@@ -518,7 +518,7 @@ ul li {
   margin-bottom: -9px;
 }
 .news-title h2 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
@@ -573,7 +573,7 @@ ul li {
   top: 0;
   margin: 20px 20px;
   background-color: #a1d1dd;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: #fff;
 }
 .news .slider-item .news-img .news-date .date {
@@ -597,14 +597,14 @@ ul li {
   padding: 16px 19px;
 }
 .news .slider-item .slider-content .slider-title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 16px;
   margin-bottom: 17px;
   font-weight: 400;
   color: #000;
 }
 .news .slider-item .slider-content .slider-details {
-  font-family: 'Open_Sans';
+  font-family: "Open_Sans";
   font-weight: 400;
   font-size: 14px;
   color: #424242;
@@ -617,7 +617,7 @@ ul li {
   padding: 16px 20px;
   padding-bottom: 19px;
   color: #c4c4c4;
-  font-family: 'Open_Sans';
+  font-family: "Open_Sans";
   font-weight: 400;
   font-size: 14px;
 }
@@ -638,7 +638,7 @@ ul li {
   height: auto;
 }
 .footer .footer-bottom span {
-  font-family: 'Open_Sans';
+  font-family: "Open_Sans";
   font-weight: 400;
   font-size: 14px;
   color: #888888;
@@ -654,7 +654,7 @@ ul li {
   color: #888888;
 }
 .footer .about {
-  font-family: 'Open_Sans';
+  font-family: "Open_Sans";
   font-size: 14.5px;
   font-weight: 400;
   color: #888888;
@@ -672,7 +672,7 @@ ul li {
   font-size: 15px;
 }
 .footer .name {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
   color: #f7f7f7;
@@ -699,7 +699,7 @@ ul li {
   color: #fff;
 }
 .footer .describe {
-  font-family: 'Open_Sans';
+  font-family: "Open_Sans";
   font-size: 14.5px;
   font-weight: 400;
   color: #888888;
@@ -720,7 +720,7 @@ ul li {
   width: 100%;
   box-sizing: border-box;
   color: #888888;
-  font-family: 'Open_Sans';
+  font-family: "Open_Sans";
   font-size: 14px;
   font-weight: 400;
 }
@@ -746,7 +746,7 @@ ul li {
 .footer .navigation nav .nav-item {
   width: 46%;
   box-sizing: border-box;
-  font-family: 'Open_Sans';
+  font-family: "Open_Sans";
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 9px;

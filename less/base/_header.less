@@ -1,254 +1,241 @@
 .cover {
-    position: fixed;
-    ;
-    width: 100%;
-    height: 100vh;
-    background-color: @pure-white;
-    opacity: 0;
-    z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: @pure-white;
+  opacity: 0;
+  z-index: -1;
 }
 
 .cover.active {
-    opacity: 0.3;
-    z-index: 100;
-    .transit(all, .5s);
+  opacity: 0.3;
+  z-index: 100;
+  .transit(all, 0.5s);
 }
 
 .logo-mobile {
-    display: none;
-    text-align: center;
+  display: none;
+  text-align: center;
 }
 
 .header {
-    padding: 0 15px;
-    font-size: 14px;
-    font-family: @content-font;
-    font-weight: 400;
-    background-color: @bg-header;
-    color: @header-color;
-    display: flex;
-    height: 45px;
-    letter-spacing: 0.01em;
-    align-items: center;
+  padding: 0 15px;
+  font-size: 14px;
+  font-family: @content-font;
+  font-weight: 400;
+  background-color: @bg-header;
+  color: @header-color;
+  display: flex;
+  height: 45px;
+  letter-spacing: 0.01em;
+  align-items: center;
 
-    &-inner {
-        a {
-            font-size: 14px;
-            font-family: @content-font;
-            font-weight: 400;
-            background-color: @bg-header;
-            color: @header-color;
-        }
-
-        .flex();
-
-        .web-info {
-            display: flex;
-
-            &-button {
-                display: flex;
-            }
-
-            .info-icon {
-                width: 20px;
-                height: 20px;
-                line-height: 20px;
-                font-size: 12px;
-                text-align: center;
-                color: @header-color;
-                margin-right: 0px;
-                margin-left: -4px;
-            }
-        }
-
-        .web-info.active-nav {
-            display: none;
-        }
-
-        .control-box.active-nav {
-            display: none;
-        }
-
-        .control-box {
-            display: flex;
-
-            &-icon {
-                display: flex;
-                margin-left: 27px;
-
-                .setting-icon {
-                    height: 20px;
-                    width: 20px;
-                    line-height: 20px;
-                    text-align: center;
-                    font-size: 13px;
-                    color: @header-color;
-                    margin-right: 1px;
-                }
-
-                .icon {
-                    height: 20px;
-                    width: 20px;
-                    line-height: 20px;
-                    text-align: center;
-                    font-size: 10px;
-                    color: @header-color;
-
-                }
-            }
-        }
+  &-inner {
+    a {
+      font-size: 14px;
+      font-family: @content-font;
+      font-weight: 400;
+      background-color: @bg-header;
+      color: @header-color;
     }
+
+    .flex();
+
+    .web-info {
+      display: flex;
+
+      &-button {
+        display: flex;
+      }
+
+      .info-icon {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        text-align: center;
+        color: @header-color;
+        margin-right: 0px;
+        margin-left: -4px;
+      }
+    }
+
+    .web-info.active-nav {
+      display: none;
+    }
+
+    .control-box.active-nav {
+      display: none;
+    }
+
+    .control-box {
+      display: flex;
+
+      &-icon {
+        display: flex;
+        margin-left: 27px;
+
+        .setting-icon {
+          height: 20px;
+          width: 20px;
+          line-height: 20px;
+          text-align: center;
+          font-size: 13px;
+          color: @header-color;
+          margin-right: 1px;
+        }
+
+        .icon {
+          height: 20px;
+          width: 20px;
+          line-height: 20px;
+          text-align: center;
+          font-size: 10px;
+          color: @header-color;
+        }
+      }
+    }
+  }
 }
 
 .menu-bar {
+  align-items: center;
+  padding: 20px 15px 19px 15px;
+  box-sizing: border-box;
+  font-family: @main-font;
+  font-weight: 700;
+  // height: 79px;
+  border-bottom: 1px solid @boder-menu;
+
+  &-inner {
+    display: flex;
     align-items: center;
-    padding: 20px 15px 19px 15px;
-    box-sizing: border-box;
-    font-family: @main-font;
-    font-weight: 700;
-    // height: 79px;
-    border-bottom: 1px solid @boder-menu;
+    justify-content: space-between;
 
-    &-inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .shop-name {
+      height: 36px;
+      width: 184px;
+      line-height: 36px;
+      text-align: center;
+      position: relative;
+      padding-left: 12px;
+      vertical-align: bottom;
+      border: 2px solid @shop-name-color;
+      text-transform: uppercase;
+      color: @shop-name-color;
+      font-size: 20px;
+      letter-spacing: 0.764em;
+    }
 
-        .shop-name {
-            height: 36px;
-            width: 184px;
-            line-height: 36px;
-            text-align: center;
-            position: relative;
-            padding-left: 12px;
+    .nav-bar {
+      .flex();
+      box-sizing: border-box;
+
+      nav {
+        .nav-icon {
+          display: none;
+          font-size: 14px;
+          text-transform: uppercase;
+
+          i {
+            font-size: 22px;
             vertical-align: bottom;
-            border: 2px solid @shop-name-color;
+            padding-right: 15px;
+          }
+        }
+
+        .navbar {
+          align-items: center;
+          display: flex;
+
+          .nav-title {
+            display: none;
             text-transform: uppercase;
-            color: @shop-name-color;
-            font-size: 20px;
-            letter-spacing: 0.764em;
-        }
+            font-size: 18px;
+            background-color: @bg-header;
+            color: @pure-white;
+            line-height: 40px;
+            height: 43px;
+            // width: 100%;
+            padding: 0 15px;
+          }
 
-        .nav-bar {
-            .flex();
-            box-sizing: border-box;
+          .nav-item {
+            margin-left: 28px;
+            margin-right: 27px;
+            display: inline-block;
 
-            nav {
-                .nav-icon {
-                    display: none;
-                    font-size: 14px;
-                    text-transform: uppercase;
-
-                    i {
-                        font-size: 22px;
-                        vertical-align: bottom;
-                        padding-right: 15px;
-                    }
-                }
-
-                .navbar {
-                    align-items: center;
-                    display: flex;
-
-                    .nav-title {
-                        display: none;
-                        text-transform: uppercase;
-                        font-size: 18px;
-                        background-color: @bg-header;
-                        color: @pure-white;
-                        line-height: 40px;
-                        height: 43px;
-                        // width: 100%;
-                        padding: 0 15px;
-                    }
-
-                    .nav-item {
-                        margin-left: 28px;
-                        margin-right: 27px;
-                        display: inline-block;
-
-                        a {
-                            text-transform: uppercase;
-                            font-size: 14px;
-                        }
-
-                        &:last-child {
-                            margin-right: 57px;
-                        }
-                    }
-
-                    .nav-item.active {
-                        &>a {
-                            color: @btn-content-color;
-                        }
-                    }
-                }
+            a {
+              text-transform: uppercase;
+              font-size: 14px;
             }
 
-            .search {
-                width: 131px;
-
-                form {
-                    display: flex;
-                    overflow: hidden;
-
-                    .search-button {
-                        align-items: center;
-
-                        button {
-                            border: none;
-                            background-color: @pure-white;
-                            color: @shop-name-color;
-                            font-size: 14px;
-                            padding: 0;
-                            vertical-align: middle;
-                            display: inline;
-                            cursor: pointer;
-
-                        }
-                    }
-
-                }
+            &:last-child {
+              margin-right: 57px;
             }
+          }
 
+          .nav-item.active {
+            & > a {
+              color: @btn-content-color;
+            }
+          }
         }
+      }
 
-        .form-control-item {
-            display: flex;
+      .search {
+        width: 131px;
+
+        form {
+          display: flex;
+          overflow: hidden;
+
+          .search-button {
             align-items: center;
 
-            .cart {
-                display: flex;
-
-                a {
-
-                    margin-left: 27px;
-
-                    i {
-                        vertical-align: middle;
-                        font-size: 29px;
-                        text-align: center;
-                    }
-
-                    display: flex;
-
-                    .control-item-love {
-                        font-size: 29px;
-                        padding-right: 30px;
-
-                    }
-
-                    .control-item-cart {
-                        font-size: 29px;
-                    }
-                }
+            button {
+              border: none;
+              background-color: @pure-white;
+              color: @shop-name-color;
+              font-size: 14px;
+              padding: 0;
+              vertical-align: middle;
+              display: inline;
+              cursor: pointer;
             }
-
+          }
         }
-
-
-
-
-
+      }
     }
+
+    .form-control-item {
+      display: flex;
+      align-items: center;
+
+      .cart {
+        display: flex;
+
+        a {
+          margin-left: 27px;
+
+          i {
+            vertical-align: middle;
+            font-size: 29px;
+            text-align: center;
+          }
+
+          display: flex;
+
+          .control-item-love {
+            font-size: 29px;
+            padding-right: 30px;
+          }
+
+          .control-item-cart {
+            font-size: 29px;
+          }
+        }
+      }
+    }
+  }
 }
